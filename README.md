@@ -1,7 +1,14 @@
-# AdhikariBabu Admin v2
+# AdhikariBabu
 
-This version adds a mobile-friendly admin dashboard UI with Jobs add/edit/delete and Draft/Published status.
+Modern, mobile-first government jobs, results and career information website.
 
-IMPORTANT: localStorage/sessionStorage are only a prototype. They are NOT production security. Before public launch, replace them with server-side authentication (e.g. Supabase Auth), database Row Level Security, secure cookies, rate limiting, CSRF protection where applicable, audit logs, and server-side validation.
+## Run locally
+1. Install Node.js 18+.
+2. `npm install`
+3. `npm run dev`
+4. Open `http://localhost:3000`
 
-Run: npm install && npm run dev
+## Important
+The admin UI is only a starter shell. Before production, connect authentication and the database on the server side. Never put admin passwords or secret API keys in client-side code.
+
+Target deployment: Vercel free tier → `adhikaribabu.vercel.app`
